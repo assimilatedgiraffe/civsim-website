@@ -46,10 +46,19 @@
   }
 
   #watch {
-    background-image: url("");
+    background-image: url("theatre.jpg");
     background-size: cover;
     background-repeat: no-repeat;
-    background-color: black;
+    background-color: #333;
+    color: white;
+    padding: 50px 50px 100px 50px;
+  }
+
+  #contact {
+    background-image: url("letters.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: #333;
     color: white;
     padding: 50px 50px 100px 50px;
   }
@@ -58,38 +67,46 @@
 </head>
 
 <body data-spy="scroll" data-target=".navbar" style="position: relative">
-<!-- fb sdk -->
+  <!-- fb sdk -->
   <div id="fb-root"></div>
-<script>(function(d, s, id) {
-  var js, fjs = d.getElementsByTagName(s)[0];
-  if (d.getElementById(id)) return;
-  js = d.createElement(s); js.id = id;
-  js.src = "//connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v2.7";
-  fjs.parentNode.insertBefore(js, fjs);
-}(document, 'script', 'facebook-jssdk'));</script>
+  <script>(function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = "//connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v2.7";
+    fjs.parentNode.insertBefore(js, fjs);
+  }(document, 'script', 'facebook-jssdk'));</script>
 
   <nav class="navbar navbar-inverse navbar-fixed-top">
-    <!-- <div class="navbar-header">
-      <a class="navbar-brand" href="#">Civil/Simian</a>
-    </div> -->
-    <iframe style="border: 0; width: 500px; height: 42px;" src="https://bandcamp.com/EmbeddedPlayer/album=1964480442/size=small/bgcol=333333/linkcol=0f91ff/transparent=true/" seamless><a href="http://civilsimian.bandcamp.com/album/believe-single">Believe Single by Civil Simian</a></iframe>
-    <ul class="nav navbar-nav navbar-right">
-      <li><a class="active" href="#home">Home</a></li>
-      <li><a href="#listen">Listen</a></li>
-      <li><a href="#watch">Watch</a></li>
-      <li><a href="#bio">Bio</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
+    <div class="navbar-header">
+      <iframe style="border: 0; width: 500px; height: 42px;" src="https://bandcamp.com/EmbeddedPlayer/album=1964480442/size=small/bgcol=333333/linkcol=0f91ff/transparent=true/" seamless><a href="http://civilsimian.bandcamp.com/album/believe-single">Believe Single by Civil Simian</a></iframe>
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+    </div>
+    <div class="collapse navbar-collapse" id="navbar-collapse-1">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a class="active" href="#">Home</a></li>
+        <li><a href="#listen">Listen</a></li>
+        <li><a href="#watch">Watch</a></li>
+        <li><a href="#bio">Bio</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
   </nav>
 
   <div class="container-fluid">
 
-      <img class="img-responsive center-block" src="civsim-logo.png" alt="civil simian logo" />
+    <img class="img-responsive center-block" src="civsim-logo.png" alt="civil simian logo"/>
     <div class=row id="home">
+      <div style="opacity: 0.8">
       <div class=col-md-8>
         <div>
-        <h3>Feature (latest video/release or whatever)</h3>
-        <div class="fb-page" data-href="https://www.facebook.com/civil.simian/" data-tabs="timeline, events, messages" data-height="600" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/civil.simian/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/civil.simian/">Civil Simian</a></blockquote></div>
+          <!-- <h3 class="text-center">Feature (latest video/release or whatever)</h3> -->
+          <div class="fb-page" data-href="https://www.facebook.com/civil.simian/" data-tabs="timeline" data-height="600" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/civil.simian/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/civil.simian/">Civil Simian</a></blockquote></div>
         </div>
       </div>
       <div class=col-md-4>
@@ -97,20 +114,21 @@
         <iframe src="https://calendar.google.com/calendar/embed?showTitle=0&amp;showNav=0&amp;showDate=0&amp;showPrint=0&amp;showTabs=0&amp;showCalendars=0&amp;showTz=0&amp;mode=AGENDA&amp;height=600&amp;wkst=1&amp;bgcolor=%23FFFFFF&amp;src=ahkcnaj0aafv5qna4e7e60mh7k%40group.calendar.google.com&amp;color=%232952A3&amp;ctz=Europe%2FLondon" style="border-width:0" width="300" height="400" frameborder="0" scrolling="no"></iframe>
       </div>
     </div>
+    </div>
 
     <div class=row id="listen">
-      <div class=col-md-6>
-        <h3>Listen on Bandcamp:</h3>
-        <iframe style="border: 0; width: 400px; height: 520px;" src="https://bandcamp.com/EmbeddedPlayer/album=1964480442/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/" seamless><a href="http://civilsimian.bandcamp.com/album/believe-single">Believe Single by Civil Simian</a></iframe>
-      </div>
-      <div class=col-md-6>
-        <h3>Listen on SoundCloud:</h3>
+      <div class=col-md-7>
+        <h3>Latest tracks:</h3>
         <iframe width="100%" height="450" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/users/135103443&amp;color=ff5500&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false"></iframe>
+      </div>
+      <div class=col-md-5>
+        <h3>Support us on Bandcamp :)</h3>
+        <iframe style="border: 0; width: 400px; height: 520px;" src="https://bandcamp.com/EmbeddedPlayer/album=1964480442/size=large/bgcol=333333/linkcol=0f91ff/tracklist=false/transparent=true/" seamless><a href="http://civilsimian.bandcamp.com/album/believe-single">Believe Single by Civil Simian</a></iframe>
       </div>
     </div>
 
     <div class=row id="watch">
-      <h3>Watch on youtube(I should be able to get these playing in fancy pop out box thing)<br></h3>
+      <h2>The live experience:</h2>
       <div class=col-md-6>
         <iframe width="400" height="315" src="https://www.youtube.com/embed/M1wb5SFtQl0" frameborder="0" allowfullscreen></iframe>
       </div>
@@ -120,12 +138,40 @@
     </div>
 
     <div class=row id="bio">
-      <h1 class="text-center">Bio</h1>
-        <p class="text-justify">We're an alternative 5-piece band from Belfast. We play music influenced by everything from electronica to funk and from rock to dub reggae. <br><br> We've been together as Urban Scarecrow since May 2010 but some of our current members have joined much more recently. We've played a lot around Belfast and elsewhere in NI and even managed a set in England a while back. We decided it was time for a change of directions. The music is changing - and now we're called Civil Simian. The EP is done, and now we're working on post-production for it and we're making our first full length album.</p>
+      <h1>Bio</h1>
+      <p>&ldquo;Psychedelic future-funk vibes&rdquo; - Rigsy, BBC Radio Ulster</p>
+
+      <p>Civil Simian were in equal measure shocked and pleased when they won last year's Guinness Versus tournament, a BOTB competition bringing together twenty of the best Northern Irish acts of the last years, but the multi-instrumentalists' buzz and sphere of influence has been steadily expanding since their formation in Summer 2014.</p>
+
+      <p>The music begain in 2010 when lead singer Ruari McCloskey met lead guitarist Martin Price in a Katy Daly's and they started talking about music. &quot;It was immediately clear to me that I wanted to be with this man,&quot; quips Ruari, &quot;in a purely musical sense, of course. All the signs were there, he even liked Smithwick's!&quot; They played with other members as Urban Scarecrow until Summer 2014 when they undertook a change in style with the addition of an imaginitive synth player in Ben Fleming and decided a new image was necessary. Homeward migration then deprived them of a rhythm section and another excellent Belfast band The Sins of Flynn of everything but the rhythm section in early 2015. The mutual musical respect between the remaining members made a new group the obvious move. &quot;I was so happy when Sean [McCann, the bassist] joined us, he's easily the best bassist I've ever played with and probably the best I've seen in NI.&quot; says Ruari. After Sean joined the very talented drummer Colm O'Flynn was swift on his heels to complete the ensemble and his live drum reimaginings of some of their sample-based tracks has really helped to define and polish their modern sound.</p>
+
+      <p>The band have so many influences it's impossible to pin them down to a single genre. One of McCloskey and Price's biggest influences is Radiohead, and, like them, they're constantly reinventing themselves between songs. &quot;For us it's really about finding the style that suits the song after it's been written, often we try and play new things over and over again with a trip-hop vibe, a reggae vibe, or whatever comes to mind, until we find something that's exciting.&quot; They've been alternately described as &quot;psychedelic future-funk&quot; [BBC Radio Ulster], &quot;James Bond soundtrack&quot; [BBC ATL] and &quot;a truly unique blend of soul, funk, rock, pop and about 20 other genres&quot; [SO:NI] to name just a few things.</p>
+
+      <em><p>&ldquo;One of the best new bands in the country ...unique and original alt-rock...funk...electronica &ndash; excellent lead vocals...soaring, soulful.&rdquo;  -Philip McCarroll (Pay*ola)</p>
+
+      <p>&ldquo;...their own unique groove...an impressively polished cluster of tracks&rdquo;  -Pamela Anderson (Gigging NI)</p>
+
+      <p>&quot;if they continue to come up with material as strong as &lsquo;Believe&rsquo; then, frankly, they can call themselves whatever they like&quot;  - Al, Chordblossom (apparently ape-based band names are becoming common in NI)</p>
+
+      <p>&ldquo;a truly unique blend of soul, funk, rock, pop and about 20 other genres, with fabulous vocals and memorable songs.&rdquo;   -SONI promotions</p></em>
+
+      <p>Right now the band are still gigging steadily around Belfast, and branching out to other parts of NI. They are hoping to bring out an all-Ireland tour very soon closely followed by a UK tour to celebrate the release of their forthcoming full-length album.</p>
+
+      <p>&quot;The most important thing for us is making new music that we love to play and love to listen to ourselves,&quot; says Ruari, &quot;I listen to our album all the time and think about all the work that went into it, and I love it, and it's not even finished yet! But we're very close. Coming soon folks, coming soon...&quot;</p>
     </div>
 
     <div class=row id="contact">
-      <h3>social media links and contact details, possibly a contact us form</h3>
+      <div class="col-md-8">
+        <h3>Get in touch!</h3>
+        <div class="fb-page" data-href="https://www.facebook.com/civil.simian/" data-tabs="message" data-height="600" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="false"><blockquote cite="https://www.facebook.com/civil.simian/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/civil.simian/">Civil Simian</a></blockquote></div>
+        <!-- <p><a class="btn btn-lg btn-primary" href="#" role="button">Facebook</a>
+        <a class="btn btn-lg btn-primary" href="#" role="button">Twitter</a>
+        <a class="btn btn-lg btn-primary" href="#" role="button">Tumbler</a></p> -->
+      </div>
+      <div class="col-md-4">
+        <h3>Twitter</h3>
+        <a class="twitter-timeline" data-theme="dark" href="https://twitter.com/civilsimian">Tweets by civilsimian</a> <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+      </div>
     </div>
   </div>
 </body>
