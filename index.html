@@ -11,41 +11,90 @@
 
   <style>
   body {
-    background-color:lightgrey;
+    /*background-color:lightgrey;*/
     color:black;
-    padding-top:70px;
+    padding-top:50px;
   }
+
+  p {
+    font-size: 14pt;
+    background-color: rgba(0, 0, 0, 0.5);;
+  }
+
+  #home {
+    background-image: url("group-photo.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+    padding: 150px 50px 100px 50px;
+  }
+
+  #bio {
+    background-image: url("band-photo.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+    padding: 50px 100px 100px 100px;
+  }
+
+  #listen {
+    background-image: url("headphones.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+    padding: 50px 50px 100px 50px;
+  }
+
+  #watch {
+    background-image: url("");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: black;
+    color: white;
+    padding: 50px 50px 100px 50px;
+  }
+
   </style>
 </head>
 
 <body data-spy="scroll" data-target=".navbar" style="position: relative">
+<!-- fb sdk -->
+  <div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v2.7";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
   <nav class="navbar navbar-inverse navbar-fixed-top">
-    <div class="navbar-header">
+    <!-- <div class="navbar-header">
       <a class="navbar-brand" href="#">Civil/Simian</a>
-    </div>
+    </div> -->
+    <iframe style="border: 0; width: 500px; height: 42px;" src="https://bandcamp.com/EmbeddedPlayer/album=1964480442/size=small/bgcol=333333/linkcol=0f91ff/transparent=true/" seamless><a href="http://civilsimian.bandcamp.com/album/believe-single">Believe Single by Civil Simian</a></iframe>
     <ul class="nav navbar-nav navbar-right">
-      <li><a class="active" href="#">Home</a></li>
+      <li><a class="active" href="#home">Home</a></li>
       <li><a href="#listen">Listen</a></li>
       <li><a href="#watch">Watch</a></li>
-      <li><a href="#read">Read</a></li>
+      <li><a href="#bio">Bio</a></li>
       <li><a href="#contact">Contact</a></li>
     </ul>
   </nav>
 
   <div class="container-fluid">
-    <div class=row>
-      <img class="img-responsive center-block" src="civsim-logo.png" alt="civil simian logo" />
-    </div>
 
-    <div class=row>
-      <div class=col-md-6>
+      <img class="img-responsive center-block" src="civsim-logo.png" alt="civil simian logo" />
+    <div class=row id="home">
+      <div class=col-md-8>
         <div>
-          <p>We're an alternative 5-piece band from Belfast. We play music influenced by everything from electronica to funk and from rock to dub reggae.</p>
-          <p>We've been together as Urban Scarecrow since May 2010 but some of our current members have joined much more recently. We've played a lot around Belfast and elsewhere in NI and even managed a set in England a while back. We decided it was time for a change of directions. The music is changing - and now we're called Civil Simian. The EP is done, and now we're working on post-production for it and we're making our first full length album.</p>
+        <h3>Feature (latest video/release or whatever)</h3>
+        <div class="fb-page" data-href="https://www.facebook.com/civil.simian/" data-tabs="timeline, events, messages" data-height="600" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/civil.simian/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/civil.simian/">Civil Simian</a></blockquote></div>
         </div>
       </div>
-      <div class=col-md-6>
-        band photo here
+      <div class=col-md-4>
+        <h3>Upcoming GIGs!</h3>
+        <iframe src="https://calendar.google.com/calendar/embed?showTitle=0&amp;showNav=0&amp;showDate=0&amp;showPrint=0&amp;showTabs=0&amp;showCalendars=0&amp;showTz=0&amp;mode=AGENDA&amp;height=600&amp;wkst=1&amp;bgcolor=%23FFFFFF&amp;src=ahkcnaj0aafv5qna4e7e60mh7k%40group.calendar.google.com&amp;color=%232952A3&amp;ctz=Europe%2FLondon" style="border-width:0" width="300" height="400" frameborder="0" scrolling="no"></iframe>
       </div>
     </div>
 
@@ -61,24 +110,18 @@
     </div>
 
     <div class=row id="watch">
+      <h3>Watch on youtube(I should be able to get these playing in fancy pop out box thing)<br></h3>
       <div class=col-md-6>
-        <h3>Watch on youtube(I should be able to get these playing in fancy pop out box thing)</h3>
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/M1wb5SFtQl0" frameborder="0" allowfullscreen></iframe>
+        <iframe width="400" height="315" src="https://www.youtube.com/embed/M1wb5SFtQl0" frameborder="0" allowfullscreen></iframe>
       </div>
       <div class=col-md-6>
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/mtr6S8b-Oe4?list=UUKo-ayIPInjGjz4ojnmLjNw" frameborder="0" allowfullscreen></iframe>
+        <iframe width="400" height="315" src="https://www.youtube.com/embed/mtr6S8b-Oe4?list=UUKo-ayIPInjGjz4ojnmLjNw" frameborder="0" allowfullscreen></iframe>
       </div>
     </div>
 
-    <div class=row id="read">
-      <div class=col-md-6>
-        <h3>read stuff about us</h3>
-        <p> reviews and whatnot </p>
-      </div>
-      <div class=col-md-6>
-        <p> twitter feed </p>
-        <a class="twitter-timeline" data-width="220" data-height="200" data-theme="dark" href="https://twitter.com/civilsimian">Tweets by civilsimian</a>
-      </div>
+    <div class=row id="bio">
+      <h1 class="text-center">Bio</h1>
+        <p class="text-justify">We're an alternative 5-piece band from Belfast. We play music influenced by everything from electronica to funk and from rock to dub reggae. <br><br> We've been together as Urban Scarecrow since May 2010 but some of our current members have joined much more recently. We've played a lot around Belfast and elsewhere in NI and even managed a set in England a while back. We decided it was time for a change of directions. The music is changing - and now we're called Civil Simian. The EP is done, and now we're working on post-production for it and we're making our first full length album.</p>
     </div>
 
     <div class=row id="contact">
