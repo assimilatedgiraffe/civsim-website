@@ -9,11 +9,14 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+
   <style>
   body {
-    /*background-color:lightgrey;*/
+    background-color:grey;
     color:black;
     padding-top:50px;
+    font-family: 'Roboto', sans-serif;
   }
 
   p {
@@ -22,11 +25,12 @@
   }
 
   #home {
+    padding: 150px 100px 50px 100px;
     background-image: url("group-photo.jpg");
-    background-size: cover;
+    background-size: 100%;
+    background-attachment: fixed;;
     background-repeat: no-repeat;
     color: white;
-    padding: 150px 50px 100px 50px;
   }
 
   #bio {
@@ -89,7 +93,7 @@
     </div>
     <div class="collapse navbar-collapse" id="navbar-collapse-1">
       <ul class="nav navbar-nav navbar-right">
-        <li><a class="active" href="#">Home</a></li>
+        <li><a class="active" href="#home">Home</a></li>
         <li><a href="#listen">Listen</a></li>
         <li><a href="#watch">Watch</a></li>
         <li><a href="#bio">Bio</a></li>
@@ -100,18 +104,18 @@
 
   <div class="container-fluid">
 
-    <img class="img-responsive center-block" src="civsim-logo.png" alt="civil simian logo"/>
-    <div class=row id="home">
-      <div style="opacity: 0.8">
+    <div class="row" id="home">
+      <!-- <div style="opacity: 0.8"> -->
+    <img class="img-responsive center-block" style="opacity= 0.8; padding-bottom:100px" src="civsim-logo.png" alt="civil simian logo"/>
       <div class=col-md-8>
         <div>
           <!-- <h3 class="text-center">Feature (latest video/release or whatever)</h3> -->
-          <div class="fb-page" data-href="https://www.facebook.com/civil.simian/" data-tabs="timeline" data-height="600" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/civil.simian/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/civil.simian/">Civil Simian</a></blockquote></div>
+          <div class="fb-page" style="opacity= 0.8" data-href="https://www.facebook.com/civil.simian/" data-tabs="timeline" data-height="400" data-width="500" data-small-header="true" data-adapt-container-width="true" data-hide-cover="true" data-show-facepile="true"><blockquote cite="https://www.facebook.com/civil.simian/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/civil.simian/">Civil Simian</a></blockquote></div>
         </div>
       </div>
       <div class=col-md-4>
         <h3>Upcoming GIGs!</h3>
-        <iframe src="https://calendar.google.com/calendar/embed?showTitle=0&amp;showNav=0&amp;showDate=0&amp;showPrint=0&amp;showTabs=0&amp;showCalendars=0&amp;showTz=0&amp;mode=AGENDA&amp;height=600&amp;wkst=1&amp;bgcolor=%23FFFFFF&amp;src=ahkcnaj0aafv5qna4e7e60mh7k%40group.calendar.google.com&amp;color=%232952A3&amp;ctz=Europe%2FLondon" style="border-width:0" width="300" height="400" frameborder="0" scrolling="no"></iframe>
+        <iframe src="https://calendar.google.com/calendar/embed?showTitle=0&amp;showNav=0&amp;showDate=0&amp;showPrint=0&amp;showTabs=0&amp;showCalendars=0&amp;showTz=0&amp;mode=AGENDA&amp;height=600&amp;wkst=1&amp;bgcolor=%23FFFFFF&amp;src=ahkcnaj0aafv5qna4e7e60mh7k%40group.calendar.google.com&amp;color=%232952A3&amp;ctz=Europe%2FLondon" style="border-width:0;opacity: 0.8;" width="300" height="400" frameborder="0" scrolling="no"></iframe>
       </div>
     </div>
     </div>
@@ -119,8 +123,9 @@
     <div class=row id="listen">
       <div class=col-md-7>
         <h3>Latest tracks:</h3>
-        <iframe width="100%" height="450" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/users/135103443&amp;color=ff5500&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false"></iframe>
+        <iframe width="100%" height="450" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/users/135103443&amp;color=0066cc&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false"></iframe>
       </div>
+
       <div class=col-md-5>
         <h3>Support us on Bandcamp :)</h3>
         <iframe style="border: 0; width: 400px; height: 520px;" src="https://bandcamp.com/EmbeddedPlayer/album=1964480442/size=large/bgcol=333333/linkcol=0f91ff/tracklist=false/transparent=true/" seamless><a href="http://civilsimian.bandcamp.com/album/believe-single">Believe Single by Civil Simian</a></iframe>
@@ -128,7 +133,7 @@
     </div>
 
     <div class=row id="watch">
-      <h2>The live experience:</h2>
+      <h2> The live experience:</h2>
       <div class=col-md-6>
         <iframe width="400" height="315" src="https://www.youtube.com/embed/M1wb5SFtQl0" frameborder="0" allowfullscreen></iframe>
       </div>
@@ -161,16 +166,16 @@
     </div>
 
     <div class=row id="contact">
-      <div class="col-md-8">
+      <div class="col-md-7">
         <h3>Get in touch!</h3>
-        <div class="fb-page" data-href="https://www.facebook.com/civil.simian/" data-tabs="message" data-height="600" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="false"><blockquote cite="https://www.facebook.com/civil.simian/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/civil.simian/">Civil Simian</a></blockquote></div>
+        <div class="fb-page" data-href="https://www.facebook.com/civil.simian/" data-tabs="messages" data-height="600" data-width="500" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="false"><blockquote cite="https://www.facebook.com/civil.simian/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/civil.simian/">Civil Simian</a></blockquote></div>
         <!-- <p><a class="btn btn-lg btn-primary" href="#" role="button">Facebook</a>
         <a class="btn btn-lg btn-primary" href="#" role="button">Twitter</a>
         <a class="btn btn-lg btn-primary" href="#" role="button">Tumbler</a></p> -->
       </div>
-      <div class="col-md-4">
-        <h3>Twitter</h3>
-        <a class="twitter-timeline" data-theme="dark" href="https://twitter.com/civilsimian">Tweets by civilsimian</a> <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+      <div class="col-md-5">
+        <!-- <h3>Twitter</h3> -->
+        <a class="twitter-timeline" data-theme="dark" data-height="1000" href="https://twitter.com/civilsimian">Tweets by civilsimian</a> <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
       </div>
     </div>
   </div>
