@@ -26,32 +26,45 @@
   <style>
 
   body {
-    background-color:grey;
+    background-color:black;
     color:black;
     padding-top:50px;
+  }
+
+
+  .read {
+    font-size: 14pt;
+    font-family: 'Roboto', sans-serif;
+    background-color: rgba(0, 0, 0, 0.8);;
+  }
+
+  h3 {
+    /*padding-bottom: 5%;*/
     font-family: 'Roboto', sans-serif;
   }
 
-  p {
-    font-size: 14pt;
-    background-color: rgba(0, 0, 0, 0.5);;
+  .logo {
+    padding: 100px 5% 0px 5%;
+  }
+  .row {
+    padding: 40px 5% 15px 5%;
   }
 
   #home {
-    padding: 150px 100px 50px 100px;
+    /*padding: 150px 100px 50px 100px;*/
     background-image: url("group-photo.jpg");
-    background-size: 100%;
-    background-attachment: fixed;;
+    background-size: 100% 100%;
+    background-attachment: fixed;
     background-repeat: no-repeat;
     color: white;
   }
 
-  #bio {
+  #read {
     background-image: url("band-photo.jpg");
-    background-size: cover;
+    background-size: 100% 100%;
+    background-attachment: fixed;
     background-repeat: no-repeat;
     color: white;
-    padding: 50px 100px 100px 100px;
   }
 
   #listen {
@@ -59,7 +72,6 @@
     background-size: cover;
     background-repeat: no-repeat;
     color: white;
-    padding: 50px 50px 100px 50px;
   }
 
   #watch {
@@ -68,7 +80,6 @@
     background-repeat: no-repeat;
     background-color: #333;
     color: white;
-    padding: 50px 50px 100px 50px;
   }
 
   #contact {
@@ -77,7 +88,6 @@
     background-repeat: no-repeat;
     background-color: #333;
     color: white;
-    padding: 50px 50px 100px 50px;
   }
 
   </style>
@@ -96,30 +106,35 @@
 
   <nav class="navbar navbar-inverse navbar-fixed-top">
     <div class="navbar-header">
-      <iframe style="border: 0; width: 500px; height: 42px;" src="https://bandcamp.com/EmbeddedPlayer/album=1964480442/size=small/bgcol=333333/linkcol=0f91ff/transparent=true/" seamless><a href="http://civilsimian.bandcamp.com/album/believe-single">Believe Single by Civil Simian</a></iframe>
+      <iframe style="border: 0; width: 300px; height: 42px; display:inline;" src="https://bandcamp.com/EmbeddedPlayer/album=1964480442/size=small/bgcol=333333/linkcol=0f91ff/artwork=none/transparent=true/" seamless><a href="http://civilsimian.bandcamp.com/album/believe-single">Believe Single by Civil Simian</a></iframe>
       <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse-1" aria-expanded="false">
         <span class="sr-only">Toggle navigation</span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-    </div>
+  </div>
     <div class="collapse navbar-collapse" id="navbar-collapse-1">
       <ul class="nav navbar-nav navbar-right">
         <li><a class="active" href="#home">Home</a></li>
         <li><a href="#listen">Listen</a></li>
         <li><a href="#watch">Watch</a></li>
-        <li><a href="#bio">Bio</a></li>
+        <li><a href="#read">Read</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
     </div>
   </nav>
 
-  <div class="container-fluid">
+  <div class="container-fluid" id="home">
 
-    <div class="row" id="home">
+    <div class="row">
       <!-- <div style="opacity: 0.8"> -->
-    <img class="img-responsive block-center" style="padding-bottom:50px" src="civsim-logo.png" alt="civil simian logo"/>
+<div class="col-md-12">
+
+    <img class="img-responsive block-center logo" src="civsim-logo.png" alt="civil simian logo"/>
+  </div>
+</div>
+      <div class="row">
       <div class=col-md-8>
         <div style="opacity= 0.8">
           <h3>News</h3>
@@ -132,33 +147,44 @@
       </div>
     </div>
     </div>
-
+  </div>
+  <div class="container-fluid">
     <div class=row id="listen">
-      <div class=col-md-7>
-        <h3>Latest tracks:</h3>
-        <iframe width="100%" height="450" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/users/135103443&amp;color=0066cc&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false"></iframe>
-      </div>
 
-      <div class=col-md-5>
+      <div class=col-md-8>
         <h3>Support us on Bandcamp :)</h3>
-        <iframe style="border: 0; width: 400px; height: 520px;" src="https://bandcamp.com/EmbeddedPlayer/album=1964480442/size=large/bgcol=333333/linkcol=0f91ff/tracklist=false/transparent=true/" seamless><a href="http://civilsimian.bandcamp.com/album/believe-single">Believe Single by Civil Simian</a></iframe>
-      </div>
+        <iframe style="border: 0; width: 100%; height: 120px" src="https://bandcamp.com/EmbeddedPlayer/album=1964480442/size=large/bgcol=333333/linkcol=0f91ff/tracklist=false/artwork=small/transparent=true/" seamless><a href="http://civilsimian.bandcamp.com/album/believe-single">Believe Single by Civil Simian</a></iframe>
+    </div>
+      <div class=col-md-4>
+        <h3>Latest/tracks</h3>
+        <iframe height="400px" width="100%" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/users/135103443&amp;color=0066cc&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false"></iframe>
+    </div>
     </div>
 
+  </div>
+    <div class="container-fluid">
     <div class=row id="watch">
       <div class=col-md-6>
-      <h3> The live experience:</h3>
-        <iframe width="400" height="315" src="https://www.youtube.com/embed/M1wb5SFtQl0" frameborder="0" allowfullscreen></iframe>
+      <h3>The live/experience</h3>
+      <div class="embed-responsive embed-responsive-4by3">
+  <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/M1wb5SFtQl0" allowfullscreen></iframe>
       </div>
+    </div>
       <div class=col-md-6>
       <h3 style="color:black">.</h3>
-        <iframe width="400" height="315" src="https://www.youtube.com/embed/mtr6S8b-Oe4?list=UUKo-ayIPInjGjz4ojnmLjNw" frameborder="0" allowfullscreen></iframe>
+      <div class="embed-responsive embed-responsive-4by3">
+  <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/mtr6S8b-Oe4?list=UUKo-ayIPInjGjz4ojnmLjNw" allowfullscreen></iframe>
+      </div>
       </div>
     </div>
 
-    <div class=row id="bio">
-      <h2>Bio</h2>
-      <p>&ldquo;Psychedelic future-funk vibes&rdquo; - Rigsy, BBC Radio Ulster</p>
+  </div>
+    <div class="container-fluid">
+    <div class=row id="read">
+      <div class="col-md-12">
+      <h3>A few words/about us</h3>
+      <div class="read">
+      <p><br><em>&ldquo;Psychedelic future-funk vibes&rdquo;</em><br> - Rigsy, BBC Radio Ulster</p>
 
       <p>Civil Simian were in equal measure shocked and pleased when they won last year's Guinness Versus tournament, a BOTB competition bringing together twenty of the best Northern Irish acts of the last years, but the multi-instrumentalists' buzz and sphere of influence has been steadily expanding since their formation in Summer 2014.</p>
 
@@ -166,19 +192,23 @@
 
       <p>The band have so many influences it's impossible to pin them down to a single genre. One of McCloskey and Price's biggest influences is Radiohead, and, like them, they're constantly reinventing themselves between songs. &quot;For us it's really about finding the style that suits the song after it's been written, often we try and play new things over and over again with a trip-hop vibe, a reggae vibe, or whatever comes to mind, until we find something that's exciting.&quot; They've been alternately described as &quot;psychedelic future-funk&quot; [BBC Radio Ulster], &quot;James Bond soundtrack&quot; [BBC ATL] and &quot;a truly unique blend of soul, funk, rock, pop and about 20 other genres&quot; [SO:NI] to name just a few things.</p>
 
-      <em><p>&ldquo;One of the best new bands in the country ...unique and original alt-rock...funk...electronica &ndash; excellent lead vocals...soaring, soulful.&rdquo;  -Philip McCarroll (Pay*ola)</p>
+      <p><em>&ldquo;One of the best new bands in the country ...unique and original alt-rock...funk...electronica &ndash; excellent lead vocals...soaring, soulful.&rdquo;</em><br>  -Philip McCarroll (Pay*ola)</p>
 
-      <p>&ldquo;...their own unique groove...an impressively polished cluster of tracks&rdquo;  -Pamela Anderson (Gigging NI)</p>
+      <p><em>&ldquo;...their own unique groove...an impressively polished cluster of tracks&rdquo;</em><br>  -Pamela Anderson (Gigging NI)</p>
 
-      <p>&quot;if they continue to come up with material as strong as &lsquo;Believe&rsquo; then, frankly, they can call themselves whatever they like&quot;  - Al, Chordblossom (apparently ape-based band names are becoming common in NI)</p>
+      <p><em>&quot;if they continue to come up with material as strong as &lsquo;Believe&rsquo; then, frankly, they can call themselves whatever they like&quot;</em><br>  - Al, Chordblossom (apparently ape-based band names are becoming common in NI)</p>
 
-      <p>&ldquo;a truly unique blend of soul, funk, rock, pop and about 20 other genres, with fabulous vocals and memorable songs.&rdquo;   -SONI promotions</p></em>
+      <p><em>&ldquo;a truly unique blend of soul, funk, rock, pop and about 20 other genres, with fabulous vocals and memorable songs.&rdquo;</em><br>   -SONI promotions</p>
 
       <p>Right now the band are still gigging steadily around Belfast, and branching out to other parts of NI. They are hoping to bring out an all-Ireland tour very soon closely followed by a UK tour to celebrate the release of their forthcoming full-length album.</p>
 
       <p>&quot;The most important thing for us is making new music that we love to play and love to listen to ourselves,&quot; says Ruari, &quot;I listen to our album all the time and think about all the work that went into it, and I love it, and it's not even finished yet! But we're very close. Coming soon folks, coming soon...&quot;</p>
     </div>
+  </div>
 
+  </div>
+  </div>
+    <div class="container-fluid">
     <div class=row id="contact">
       <div class="col-md-7">
         <h3>Get in touch!</h3>
@@ -193,4 +223,9 @@
       </div>
     </div>
   </div>
+  <div class="container-fluid">
+  <div class="row" style="background-color=black;">
+    <a href="https://assimilatedgiraffe.github.io/"><img src="https://dl.dropboxusercontent.com/u/10118584/fb-photo2.jpg?raw=1" class="center-block img-responsive img-circle" alt="face" width="200px" style="padding:50px"></a>
+  </div>
+</div>
 </body>
