@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <head>
   <meta charset="UTF-8">
-  <title>Civil Simian Music</title>
+  <title>Civil Simian</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <!-- bootstrap CSS -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
@@ -22,6 +22,21 @@
     ga('create', 'UA-81676792-1', 'auto');
     ga('send', 'pageview');
 
+    // animated scrolling
+  $(function() {
+    $('a[href*="#"]:not([href="#"])').click(function() {
+      if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+        var target = $(this.hash);
+        target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+        if (target.length) {
+          $('html, body').animate({
+            scrollTop: target.offset().top - 50
+          }, 600);
+          return false;
+        }
+      }
+    });
+  });
   </script>
 
   <style>
@@ -101,7 +116,7 @@
   </style>
 </head>
 
-<body data-spy="scroll" data-target=".navbar" style="position: relative">
+<body data-spy="scroll" data-target=".navbar" data-offset="55" style="position: relative">
   <!-- fb sdk -->
   <div id="fb-root"></div>
   <script>(function(d, s, id) {
