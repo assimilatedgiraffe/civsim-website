@@ -8,6 +8,7 @@
   <meta name="og:image" content="https://dl.dropboxusercontent.com/u/10118584/group-photo.jpg?raw=1">
   <!-- bootstrap CSS -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
   <!-- jquery and bootstrap JavaScript -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
@@ -63,13 +64,14 @@
     /*font-family: 'Audiowide', cursive;*/
     font-family: 'Delius', cursive;
     font-size: 20pt;
+    text-shadow: 1px 1px 2px black;
   }
 
   nav {
     /*box-shadow: 10px 5px 5px grey;*/
   }
   .logo {
-    padding: 100px 5% 0px 5%;
+    padding: 50px 2% 0px 2%;
   }
   .row {
     padding: 10px 5% 70px 5%;
@@ -79,10 +81,14 @@
     margin-left: 40px;
   }
 
+  .btn {
+    background-color: darkgray;
+  }
+
   #home {
     /*padding: 150px 100px 50px 100px;*/
-    background-image: url("group-photo.jpg");
-    background-size: 100vw 100vh;
+    background-image: url("crowd.png");
+    background-size: cover;
     background-attachment: fixed;
     background-repeat: no-repeat;
     color: white;
@@ -122,6 +128,11 @@
     box-shadow: 0px -2px 5px black;
   }
 
+  .social-media {
+    background-image: url("civsim-members.jpg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+  }
   </style>
 </head>
 
@@ -161,9 +172,10 @@
 
     <div class="row">
       <!-- <div style="opacity: 0.8"> -->
+      <!-- <script type="text/javascript" src="http://civilsimianmusic.tumblr.com/js?start=0&num=50"></script> -->
       <div class="col-md-12">
 
-        <img class="img-responsive block-center logo" src="civsim-logo.png" alt="civil simian logo"/>
+        <img class="img-responsive block-center logo" src="civsimvector2.png" alt="civil simian logo"/>
       </div>
     </div>
     <div class="row">
@@ -242,19 +254,27 @@
       <div class="col-md-7">
         <h1>Get in touch!</h1>
         <div class="fb-page" data-href="https://www.facebook.com/civil.simian/" data-tabs="messages" data-height="600" data-width="900" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/civil.simian/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/civil.simian/">Send us a message on facebook</a></blockquote></div>
-        <!-- <p><a class="btn btn-lg btn-primary" href="#" role="button">Facebook</a>
-        <a class="btn btn-lg btn-primary" href="#" role="button">Twitter</a>
-        <a class="btn btn-lg btn-primary" href="#" role="button">Tumbler</a></p> -->
       </div>
       <div class="col-md-5">
         <h1>.  </h1>
         <a class="twitter-timeline" data-theme="dark" data-height="1000" href="https://twitter.com/civilsimian">Tweets by civilsimian</a> <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
       </div>
     </div>
+    <!-- <div class="row social-media">
+      <div class="col-md-12">
+        <p><a class="btn btn-lg btn-primary" href="https://www.facebook.com/civil.simian/" role="button"><i class="fa fa-facebook"></i>   Facebook</a>
+        <a class="btn btn-lg btn-primary" href="https://twitter.com/civilsimian" role="button"><i class="fa fa-twitter"></i>  Twitter</a>
+        <a class="btn btn-lg btn-primary" href="http://civilsimianmusic.tumblr.com/" role="button"><i class="fa fa-tumblr"></i> Tumbler</a>
+        <a class="btn btn-lg btn-primary" href="https://www.youtube.com/channel/UCKo-ayIPInjGjz4ojnmLjNw" role="button"><i class="fa fa-youtube"></i>  Youtube</a>
+        <a class="btn btn-lg btn-primary" href="https://soundcloud.com/civil-simian" role="button"><i class="fa fa-soundcloud"></i>  Soundcloud</a>
+        <a class="btn btn-lg btn-primary" href="https://civilsimian.bandcamp.com/" role="button"> Bandcamp</a>
+        <a class="btn btn-lg btn-primary" href="http://www.breakingtunes.com/civilsimian/" role="button"> Breaking Tunes</a></p>
+      </div>
+    </div> -->
   </div>
   <div class="container-fluid">
     <div class="row" style="background-color:black; padding:0px">
-      <a href="https://assimilatedgiraffe.github.io/"><img src="https://dl.dropboxusercontent.com/u/10118584/fb-photo2.jpg?raw=1" class="center-block img-responsive img-circle" alt="face" width="180" style="padding:50px"></a>
+      <a href="https://assimilatedgiraffe.github.io/"><img src="https://dl.dropboxusercontent.com/u/10118584/fb-photo2.jpg?raw=1" class="img-responsive img-circle pull-right" alt="face" width="40" style="padding:10px"></a>
     </div>
   </div>
 </body>
